@@ -15,18 +15,34 @@
         <Grid Name="Grid_MainGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"></RowDefinition>
-                <RowDefinition Height="80"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <!---Title image-->
+            <Image Name="Image_MercuryLogo" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Graphics/Merucy TypeFont Primary.png" MaxWidth="230"></Image>
+            
+            <!--Bottom Grid-->
+            <Grid Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"></RowDefinition>
-                </Grid.RowDefinitions>
+                
+                
+                <!--Left-->
+                <ScrollViewer Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <StackPanel Name="StackPanel_Services" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Vertical">
+
+                        
+
+
+                    </StackPanel>
+                </ScrollViewer>
+                
+
+
+
+
 
                 <!--Right-->
                 <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
@@ -43,7 +59,7 @@
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Latest Business News" FontSize="25"></TextBlock>
                         <ScrollViewer Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></ScrollViewer>
-                        <StackPanel Name="ListView_LatestBusinessNews" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Orientation="Vertical"></StackPanel>
+                        <StackPanel Name="StackPanel_LatestBusinessNews" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Orientation="Vertical"></StackPanel>
                     </Grid>
 
 
@@ -55,7 +71,7 @@
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="What's new?" FontSize="25"></TextBlock>
                         <ScrollViewer Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></ScrollViewer>
-                        <StackPanel Name="ListView_WhatsNew" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Orientation="Vertical"></StackPanel>
+                        <StackPanel Name="StackPanel_WhatsNew" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Orientation="Vertical"></StackPanel>
                     </Grid>
 
 
