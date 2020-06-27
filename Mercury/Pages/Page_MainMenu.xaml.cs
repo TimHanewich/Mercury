@@ -1,5 +1,4 @@
-﻿using Mercury.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,19 +13,26 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Mercury
+namespace Mercury.Pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Page_MainMenu : Page
     {
-        public MainPage()
+        public Page_MainMenu()
         {
             this.InitializeComponent();
-            Frame_MainContent.Navigate(typeof(Page_MainMenu));
+
+            //Set background color
+            Rectangle_Background.Fill = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 239, 240, 206));
         }
+
+
+        
+
+
     }
 }

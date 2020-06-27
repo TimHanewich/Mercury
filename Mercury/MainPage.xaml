@@ -10,5 +10,7 @@
 
     <Grid>
 
+        <Frame Name="Frame_MainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></Frame>
+
     </Grid>
 </Page>
